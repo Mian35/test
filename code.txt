@@ -1,0 +1,244 @@
+
+dell@DESKTOP-1COM91I MINGW64 ~ (master)
+$ cd/c
+bash: cd/c: No such file or directory
+
+dell@DESKTOP-1COM91I MINGW64 ~ (master)
+$ cd /c
+
+dell@DESKTOP-1COM91I MINGW64 /c
+$ ls
+'$AV_ASW'/         'Documents and Settings'@   MSOCache/                       'Program Files (x86)'/         temp/
+'$Recycle.Bin'/     DumpStack.log.tmp         'NFS - Hot Pursuit Remastered'/   ProgramData/                  Users/
+'$WinREAgent'/      git/                       pagefile.sys                     Recovery/                     Windows/
+'avast! sandbox'/   hiberfil.sys               PerfLogs/                        swapfile.sys                  xampp/
+ bootTel.dat        Intel/                    'Program Files'/                 'System Volume Information'/
+
+dell@DESKTOP-1COM91I MINGW64 /c
+$ cd git/
+
+dell@DESKTOP-1COM91I MINGW64 /c/git
+$ git config -- global user.name "Mian35"
+fatal: not in a git directory
+
+dell@DESKTOP-1COM91I MINGW64 /c/git
+$ git config --global user.name "Mian35"
+
+dell@DESKTOP-1COM91I MINGW64 /c/git
+$ git config --global user.email mianqasim915@gmail.com
+
+dell@DESKTOP-1COM91I MINGW64 /c/git
+$ git clone https://github.com/Mian35/test
+Cloning into 'test'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (1/1), done.
+
+dell@DESKTOP-1COM91I MINGW64 /c/git
+$ ls
+test/
+
+dell@DESKTOP-1COM91I MINGW64 /c/git
+$ cd test/
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ ls
+README.md
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ ls
+README.md  trial.txt
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git add trial.txt
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   trial.txt
+
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git commit -m "first trial file" trial.txt
+[main 44bb643] first trial file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 trial.txt
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Mian35/test'
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Mian35/test'
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git config --global user.password 35@mianqasim
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Mian35/test'
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git pull origin main
+From https://github.com/Mian35/test
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push origin gh-pages
+error: src refspec gh-pages does not match any
+error: failed to push some refs to 'https://github.com/Mian35/test'
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Mian35/test'
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push trial.txt
+fatal: invalid gitfile format: trial.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git add .
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git commit -m "First commit"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Mian35/test'
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git add .
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Mian35/test'
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 158.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Mian35/test
+   6a27aab..44bb643  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push -u origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   trial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git commit -m "First commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   trial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git commit -m "second commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   trial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push -u origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   trial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git commit -m "second commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   trial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git push -u origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+dell@DESKTOP-1COM91I MINGW64 /c/git/test (main)
+$ git commit -m "third commit" trial.txt
